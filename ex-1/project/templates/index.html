@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Interpolation Search</title>
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Interpolation search</h1>
+
+    <label>Enter Numbers</label>
+
+    <input
+        type="text"
+        id="array"
+        placeholder="10,20,30,40,50,60">
+
+    <label>Enter Key</label>
+
+    <input
+        type="number"
+        id="key"
+        placeholder="40">
+
+    <button onclick="search()">Search</button>
+
+    <div id="result"></div>
+
+</div>
+
+<script src="{{ url_for('static',filename='script.js') }}"></script>
+
+</body>
+
+</html>
