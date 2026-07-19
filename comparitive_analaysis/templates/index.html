@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Matching Comparison</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="page">
+    <header><div class="brand">DAA</div><div><span>Experiment 02</span><strong>String Matching</strong></div><em>Greedy comparison lab</em></header>
+    <section class="hero"><p>NAIVE · RABIN-KARP · KMP</p><h1>Compare pattern matching algorithms.</h1><span>Find every occurrence, inspect the KMP prefix table, and compare character checks on the same input.</span></section>
+    <main>
+        <form class="card" id="experiment-form">
+            <div class="card-head"><h2>Input</h2><small>Manual sample loaded</small></div>
+            <label for="text">Text</label>
+            <textarea id="text" rows="6" required>AABAACAADAABAABA</textarea>
+            <label for="pattern">Pattern</label>
+            <input id="pattern" value="AABA" required>
+            <button type="submit">Compare algorithms <b>→</b></button>
+        </form>
+        <section class="card result" id="result" aria-live="polite"><div class="empty"><b>Ready to compare</b><span>Run the sample to see match positions and comparison counts.</span></div></section>
+    </main>
+    <footer>AM5303 · Design and Analysis of Algorithms</footer>
+</div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

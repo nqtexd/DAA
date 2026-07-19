@@ -1,0 +1,7 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dijkstra Shortest Paths</title><link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}"></head><body><div class="page"><header><div class="brand">DAA</div><div><span>Experiment 04</span><strong>Dijkstra Shortest Paths</strong></div><em>Single-source routing</em></header><section class="hero"><p>GREEDY SHORTEST PATH</p><h1>Trace the cheapest route to every vertex.</h1><span>Relax directed weighted edges with a min-heap, then reconstruct each route from the predecessor chain.</span></section><main><form class="card" id="experiment-form"><div class="card-head"><h2>Directed graph</h2><small>No negative weights</small></div><div class="fields"><div><label for="vertices">Vertices</label><input id="vertices" type="number" min="2" value="6"></div><div><label for="source">Source</label><input id="source" type="number" min="0" value="0"></div></div><label for="edges">Edges: from, to, weight</label><textarea id="edges" rows="8">0,1,4
+0,2,1
+1,3,1
+2,1,2
+2,3,5
+3,4,3
+4,5,2</textarea><button type="submit">Find shortest paths <b>→</b></button></form><section class="card result" id="result"><div class="empty"><b>Source is ready</b><span>The sample finds distance 9 from vertex 0 to vertex 5.</span></div></section></main><footer>AM5303 · Design and Analysis of Algorithms</footer></div><script src="{{ url_for('static',filename='script.js') }}"></script></body></html>
